@@ -7,13 +7,33 @@
 :root {
     --grid-cols: 1;
     --grid-rows: 1;
+    --bg-color: #FDF5DF;
+    --ft-color: #5EBEC4;
   }
+
+  body {
+      background-color: var(--bg-color);
+      color: var(--ft-color);
+      font-family: 'Rubik', sans-serif;
+  }
+
+  h1,
+  h2 {
+      text-align: center;
+  }
+
+  h1 {
+      font-size: 2rem;
+      font-weight: 700;
+  }
+
+  
   
   #container {
     display: grid;
-    /* grid-gap: 1em; */
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
+    padding: 3em;
   }
   
 
@@ -24,4 +44,14 @@
     text-align: center;
     gap: 0;
     margin: 0;
+  }
+  
+  .sliderDiv,
+  .btn {
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  #sliderValue {
+      font-weight: 700;
   }

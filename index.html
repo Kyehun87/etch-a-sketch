@@ -4,14 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;1,400;1,700&display=swap" rel="stylesheet">  
     <title>Etch-A-Sketch</title>
     <link href="index.css" rel="stylesheet">
 </head>
 <body>
-    <div id="container">
-        <!-- <button id="newGrid">New Game</button> -->
+    <h1 id="etchTitle">Rainbow Etch-A-Sketch</h1>
+    <h2 id="descp">Move your mouse over each square to change it to a different color</h2>
+    <div id="container"></div>
+    <div class="btn">
+        <button id="newGrid">Click here for a new game</button>
     </div>
-    <button id="newGrid">New Game</button>
+    <div class="sliderDiv">
+        <h3 id="slideTitle">Choose the size of your grid</h3>
+        <input type="range" min="1" max="25" value="16" class="slider" id="sliderRange">
+        <p class="value">Value: <span id="sliderValue"></span></p>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
